@@ -2,12 +2,12 @@ import { describe, expect, it } from 'vitest';
 import {
   MAX_COLUMNS,
   MAX_PARSE_ROWS,
-  CsvParseError,
   guessDelimiter,
   parseDelimited,
   parseSeparated,
   readAnkiHeaders,
 } from '../src/csv-parse';
+import { CsvParseError } from '../src/errors';
 
 describe('parseDelimited (RFC 4180)', () => {
   it('reads quoted fields, doubled quotes and line breaks inside quotes', () => {
