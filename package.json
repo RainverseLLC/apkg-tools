@@ -1,0 +1,61 @@
+{
+  "name": "apkg-tools",
+  "version": "0.1.0",
+  "description": "Read and write Anki .apkg / .colpkg files and convert them to and from CSV, in the browser and in Node.",
+  "license": "MIT",
+  "author": "Rainverse LLC <hello@guruowl.com>",
+  "repository": "github:RainverseLLC/apkg-tools",
+  "homepage": "https://github.com/RainverseLLC/apkg-tools#readme",
+  "bugs": {
+    "url": "https://github.com/RainverseLLC/apkg-tools/issues"
+  },
+  "keywords": [
+    "anki",
+    "apkg",
+    "colpkg",
+    "anki21b",
+    "flashcards",
+    "csv",
+    "quizlet",
+    "spaced-repetition"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./template": "./data/template-basic.apkg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "data/template-basic.apkg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fzstd": "^0.1.1",
+    "jszip": "^3.10.1",
+    "sql.js": "1.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/sql.js": "^1.4.9",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
