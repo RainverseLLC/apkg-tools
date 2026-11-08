@@ -5,8 +5,10 @@ Read and write Anki `.apkg` / `.colpkg` packages and convert them to and from CS
 ## Install
 
 ```bash
-npm install apkg-tools
+npm install github:RainverseLLC/apkg-tools
 ```
+
+(The npm registry release is coming; until then, install straight from GitHub. The package builds itself on install.)
 
 Requires Node.js 18 or newer. The package is ESM-only.
 
