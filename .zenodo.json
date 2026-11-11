@@ -1,0 +1,28 @@
+{
+  "title": "apkg-tools: read and write Anki .apkg / .colpkg files in JavaScript",
+  "description": "<p>Read and write Anki .apkg / .colpkg packages and convert them to and from CSV, in the browser and in Node.js, with no Anki install; files never leave the device.</p><p>apkg-tools is the conversion core behind GuruOwl's free in-browser Anki tools, including the APKG viewer at https://guruowl.com/apkg-viewer.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Hsiao, Jam",
+      "affiliation": "Rainverse LLC"
+    }
+  ],
+  "keywords": [
+    "anki",
+    "apkg",
+    "colpkg",
+    "flashcards",
+    "csv",
+    "spaced repetition",
+    "typescript"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://guruowl.com/apkg-viewer",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
